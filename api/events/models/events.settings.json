@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "events",
   "info": {
-    "name": "events"
+    "name": "events",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -52,6 +53,12 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "events"
+    },
+    "VirtualEvent": {
+      "type": "boolean"
+    },
+    "VirtualEventUrl": {
+      "type": "string"
     }
   }
 }
